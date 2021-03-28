@@ -1,8 +1,15 @@
 import React, {Component} from 'react'
+import API from '../../utils/API.js'
 
 class Table extends Component {
     state = {
 
+    }
+
+    componentDidMount () {
+        API.getRandomPerson()
+        .then(response => console.log(response))
+        .catch(err => console.error(err))
     }
 
     render(){
@@ -31,7 +38,7 @@ class Table extends Component {
               </tr>
               <tr>
                 <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
+                <td colSpan="2">Larry the Bird</td>
                 <td>@twitter</td>
               </tr>
             </tbody>
