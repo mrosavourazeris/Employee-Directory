@@ -3,12 +3,17 @@ import API from '../../utils/API.js'
 
 class Table extends Component {
     state = {
-
+        employees: []
     }
+
+    
 
     componentDidMount () {
         API.getRandomPerson()
-        .then(response => console.log(response))
+        .then(response => {
+            this.setState({ "employees": response.data.results})
+            console.log(this.state.employees)
+        })
         .catch(err => console.error(err))
     }
 

@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export default {
-    getRandomPerson: ()  => {
+    getRandomPerson: () => {
         return axios.get("https://randomuser.me/api/?results=50")
     }
 }
