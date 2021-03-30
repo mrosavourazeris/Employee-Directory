@@ -11,7 +11,9 @@ function TableHeader(props) {
           <th scope="col">Last</th>
           <th scope="col">Email</th>
           <th scope="col">Phone</th>
-          <th scope="col">Country</th>
+          <th scope="col">
+            Country
+          </th>
           {/* <th scope="col">
               <label 
                   htmlFor="Country">Country

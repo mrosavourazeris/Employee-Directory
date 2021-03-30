@@ -19,7 +19,7 @@ class Table extends Component {
         .catch(err => console.error(err))
     }
 
-    render(){
+    render(this.props){
         return (
           <table className="table">
             <TableHeader />
