@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import API from '../../utils/API.js'
 import EmployeeLine from '../Employee'
+import "./style.css"
 
 class Table extends Component {
     state = {
@@ -23,7 +24,7 @@ class Table extends Component {
         return (
           <table className="table">
             <thead>
-              <tr>
+              <tr className="tableHeader">
                 <th scope="col">#</th>
                 <th scope="col">Picture</th>
                 <th scope="col">First</th>
