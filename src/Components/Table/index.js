@@ -10,8 +10,6 @@ class Table extends Component {
         shownEmployees: []
     }
 
-    
-
     componentDidMount () {
         API.getRandomPerson()
         .then(response => {
