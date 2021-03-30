@@ -1,7 +1,7 @@
 import React from "react";
 import './style.css'
 
-function EmployeeLine(props) {
+function TableRow(props) {
     return (
     <tr className="tableRow">
         <th scope="row">{props.employeeKey}</th>
@@ -16,5 +16,5 @@ function EmployeeLine(props) {
   
 }
 
-export default EmployeeLine;
+export default TableRow;
 
