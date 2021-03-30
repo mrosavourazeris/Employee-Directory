@@ -1,8 +1,9 @@
 import React from "react";
+import './style.css'
 
 function EmployeeLine(props) {
     return (
-    <tr>
+    <tr className="tableRow">
         <th scope="row">{props.employeeKey}</th>
         <td><img alt={props.firstName} src={props.image} /></td>
         <td>{props.firstName}</td>
