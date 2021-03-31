@@ -8,11 +8,12 @@ import Table from './Components/Table'
 class App extends Component {
 
   state = {
-    countrySearched: ""
+    search: ""
   }
 
   countrySearched = (country) => {
-    this.setState({"countrySearched": country})
+    // console.log(country)
+    this.setState({"search": country})
   }
 
   render() {
@@ -22,11 +23,10 @@ class App extends Component {
           <PageTitle />
           <SearchBar 
             countrySearched={this.countrySearched}
-
           />
           <Wrapper>
             <Table 
-              countrySearched={this.countrySearched}
+              search={this.state.search}
             />
           </Wrapper>
         </header>

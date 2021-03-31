@@ -13,18 +13,27 @@ class Table extends Component {
     componentDidMount () {
         API.getRandomPerson()
         .then(response => {
+            // console.log(this.props.search)
+            // this.updateEmployees(response.data.results)
             this.setState({ "employees": response.data.results, "shownEmployees": response.data.results} )
-            console.log(this.state.employees)
+            // console.log(this.state.employees)
         })
         .catch(err => console.error(err))
     }
 
-    render(this.props){
+    updateEmployees() {
+        const filteredResults = this.state.employees.filter(employee => employee.location.country === this.props.search)
+        console.log("results", filteredResults)
+    }
+
+    render(){
+        // console.log(this.props.search)
+        this.updateEmployees()
         return (
           <table className="table">
             <TableHeader />
             <tbody>
-                {this.state.employees.map((employee,index) => {
+                {this.state.shownEmployees.map((employee,index) => {
                     return(
                         <TableRow
                             key={index}
