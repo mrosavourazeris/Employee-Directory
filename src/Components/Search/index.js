@@ -8,11 +8,12 @@ function SearchBar(props) {
     // console.log(props)
 
     return (
-        <InputGroup className="mb-3">
+        <InputGroup className="mb-3 searchBar">
         <InputGroup.Prepend>
-            <InputGroup.Text id="basic-addon1">Search By Country</InputGroup.Text>
+            <InputGroup.Text className="inputGroup" id="basic-addon1">Search By Country</InputGroup.Text>
         </InputGroup.Prepend>
         <FormControl
+            className="formControl"
             placeholder="Enter Country"
             aria-label="Country Search"
             aria-describedby="basic-addon1"
