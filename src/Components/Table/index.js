@@ -4,7 +4,11 @@ import TableHeader from '../TableHeader'
 import TableRow from '../TableRow'
 import "./style.css"
 
+
+
 function Table (props) {
+
+
     return (
         <table className="table">
         <TableHeader />

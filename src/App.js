@@ -38,6 +38,8 @@ class App extends Component {
       console.log("results", filteredResults, this.state)
       if(filteredResults.length){
           this.setState({"shownEmployees": filteredResults})
+      } else {
+        this.setState({"shownEmployees": this.state.employees })
       }
   }
 
