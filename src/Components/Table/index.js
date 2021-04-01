@@ -11,7 +11,7 @@ function Table (props) {
 
     return (
         <table className="table">
-        <TableHeader />
+        <TableHeader sortByFirst={props.sortByFirst}/>
         <tbody>
             {props.shownEmployees.map((employee,index) => {
                 return(

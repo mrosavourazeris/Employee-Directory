@@ -1,3 +1,7 @@
 .tableHeader {
     text-align: left;
 }
+
+.hoverHand {
+    cursor: pointer
+}
