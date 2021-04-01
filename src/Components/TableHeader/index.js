@@ -11,24 +11,7 @@ function TableHeader(props) {
           <th scope="col">Last</th>
           <th scope="col">Email</th>
           <th scope="col">Phone</th>
-          <th scope="col">
-            Country
-          </th>
-          {/* <th scope="col">
-              <label 
-                  htmlFor="Country">Country
-              </label>
-              <select>
-                  {this.state.employees.reduce((countryList, employee) => {
-                      const employeeCountry = employee.location.country
-                      if (!countryList.includes(employeeCountry)) {
-                          countryList.push(employeeCountry)
-                      } 
-                  }, []).map(country => {
-                  return <option value={country}>{country}</option>})}
-              </select>
-          </th>
-          <button>Aussies</button> */}
+          <th scope="col">Country</th>
         </tr>
       </thead>
     );
