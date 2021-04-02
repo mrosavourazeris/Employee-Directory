@@ -5,8 +5,6 @@ import './style.css'
 
 
 function SearchBar(props) {
-    // console.log(props)
-
     return (
         <InputGroup className="mb-3 searchBar">
         <InputGroup.Prepend>
@@ -22,6 +20,5 @@ function SearchBar(props) {
         </InputGroup>
     )
 }
-
 
 export default SearchBar

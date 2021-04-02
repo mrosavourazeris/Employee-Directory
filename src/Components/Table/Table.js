@@ -4,10 +4,7 @@ import TableHeader from '../TableHeader/TableHeader'
 import TableRow from '../TableRow/TableRow'
 import "./style.css"
 
-
-
 function Table (props) {
-
     return (
         <table className="table">
         <TableHeader sortByFirst={props.sortByFirst}/>

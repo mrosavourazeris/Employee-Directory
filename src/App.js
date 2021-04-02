@@ -17,16 +17,12 @@ class App extends Component {
   componentDidMount () {
     API.getRandomPerson()
     .then(response => {
-        // console.log(this.props.search)
-        // this.updateEmployees(response.data.results)
         this.setState({ "employees": response.data.results, "shownEmployees": response.data.results} )
-        // console.log(this.state.employees)
     })
     .catch(err => console.error(err))
   }
 
   countrySearched = (country) => {
-    // console.log(country)
     this.setState({"search": country}, () => {
       this.updateEmployees()
     })
@@ -35,7 +31,6 @@ class App extends Component {
 
   updateEmployees = () => {
       const filteredResults = this.state.employees.filter(employee => employee.location.country === this.state.search)
-      console.log("results", filteredResults, this.state)
       if(filteredResults.length){
           this.setState({"shownEmployees": filteredResults})
       } else {
@@ -44,13 +39,11 @@ class App extends Component {
   }
 
   sortByFirst = () => {
-    console.log(this.state.shownEmployees)
     const sortByFirstName = this.state.shownEmployees.sort((a,b) => {
       if(a.name.first < b.name.first) { return -1; }
       if(a.name.first > b.name.first) { return 1; }
       return 0;
     })
-    console.log(sortByFirstName)
     this.setState({'shownEmployees': sortByFirstName})
   }
 
