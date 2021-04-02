@@ -33,7 +33,7 @@ class App extends Component {
   }
 
 
-  updateEmployees() {
+  updateEmployees = () => {
       const filteredResults = this.state.employees.filter(employee => employee.location.country === this.state.search)
       console.log("results", filteredResults, this.state)
       if(filteredResults.length){
@@ -43,14 +43,15 @@ class App extends Component {
       }
   }
 
-  sortByFirst(){
+  sortByFirst = () => {
     console.log(this.state.shownEmployees)
-    // const sortByFirstName = this.state.shownEmployees.sort((a,b) => {
-    //   if(a.firstname < b.firstname) { return -1; }
-    //   if(a.firstname > b.firstname) { return 1; }
-    //   return 0;
-    // })
-    // console.log(sortByFirstName)
+    const sortByFirstName = this.state.shownEmployees.sort((a,b) => {
+      if(a.name.first < b.name.first) { return -1; }
+      if(a.name.first > b.name.first) { return 1; }
+      return 0;
+    })
+    console.log(sortByFirstName)
+    this.setState({'shownEmployees': sortByFirstName})
   }
 
 

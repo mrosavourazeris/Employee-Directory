@@ -8,7 +8,6 @@ import "./style.css"
 
 function Table (props) {
 
-
     return (
         <table className="table">
         <TableHeader sortByFirst={props.sortByFirst}/>
