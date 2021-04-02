@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import API from '../../utils/API.js'
-import TableHeader from '../TableHeader'
-import TableRow from '../TableRow'
+import TableHeader from '../TableHeader/TableHeader'
+import TableRow from '../TableRow/TableRow'
 import "./style.css"
 
 

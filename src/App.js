@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import './App.css';
 import API from './utils/API'
-import PageTitle from "./Components/PageTitle"
-import SearchBar from './Components/Search'
-import Wrapper from './Components/Wrapper'
-import Table from './Components/Table'
+import PageTitle from "./Components/PageTitle/PageTitle"
+import SearchBar from './Components/Search/Search'
+import Wrapper from './Components/Wrapper/Wrapper'
+import Table from './Components/Table/Table'
 
 class App extends Component {
 
