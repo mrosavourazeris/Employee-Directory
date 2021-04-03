@@ -51,18 +51,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <PageTitle />
-          <SearchBar 
-            countrySearched={this.countrySearched}
-          />
-          <Wrapper>
+        <Wrapper>
+          <header >
+            <PageTitle />
+            <SearchBar 
+              countrySearched={this.countrySearched}
+            />
             <Table 
               shownEmployees={this.state.shownEmployees}
               sortByFirst={this.sortByFirst}
             />
-          </Wrapper>
-        </header>
+          </header>
+        </Wrapper>
       </div>
     );
 
