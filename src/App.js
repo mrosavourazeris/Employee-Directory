@@ -52,16 +52,12 @@ class App extends Component {
     return (
       <div className="App">
         <Wrapper>
-          <header >
-            <PageTitle />
-            <SearchBar 
-              countrySearched={this.countrySearched}
-            />
-            <Table 
-              shownEmployees={this.state.shownEmployees}
-              sortByFirst={this.sortByFirst}
-            />
-          </header>
+          <PageTitle />
+          <SearchBar countrySearched={this.countrySearched} />
+          <Table
+            shownEmployees={this.state.shownEmployees}
+            sortByFirst={this.sortByFirst}
+          />
         </Wrapper>
       </div>
     );

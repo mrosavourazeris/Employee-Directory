@@ -6,7 +6,7 @@ import "./style.css"
 
 function Table (props) {
     return (
-        <table className="table">
+        <table className="table tableStyle">
         <TableHeader sortByFirst={props.sortByFirst}/>
         <tbody>
             {props.shownEmployees.map((employee,index) => {

@@ -1,3 +1,5 @@
 .tableRow {
     text-align: left;
+    color: black;
+    border: solid;
 }
