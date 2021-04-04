@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/mrosavourazeris/employee-directory/static/css/main.323635b9.chunk.css",
+    "main.js": "/mrosavourazeris/employee-directory/static/js/main.3b13c2d1.chunk.js",
+    "main.js.map": "/mrosavourazeris/employee-directory/static/js/main.3b13c2d1.chunk.js.map",
+    "runtime-main.js": "/mrosavourazeris/employee-directory/static/js/runtime-main.7926ce99.js",
+    "runtime-main.js.map": "/mrosavourazeris/employee-directory/static/js/runtime-main.7926ce99.js.map",
+    "static/js/2.cbdcbae7.chunk.js": "/mrosavourazeris/employee-directory/static/js/2.cbdcbae7.chunk.js",
+    "static/js/2.cbdcbae7.chunk.js.map": "/mrosavourazeris/employee-directory/static/js/2.cbdcbae7.chunk.js.map",
+    "static/js/3.9975f423.chunk.js": "/mrosavourazeris/employee-directory/static/js/3.9975f423.chunk.js",
+    "static/js/3.9975f423.chunk.js.map": "/mrosavourazeris/employee-directory/static/js/3.9975f423.chunk.js.map",
+    "index.html": "/mrosavourazeris/employee-directory/index.html",
+    "static/css/main.323635b9.chunk.css.map": "/mrosavourazeris/employee-directory/static/css/main.323635b9.chunk.css.map",
+    "static/js/2.cbdcbae7.chunk.js.LICENSE.txt": "/mrosavourazeris/employee-directory/static/js/2.cbdcbae7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7926ce99.js",
+    "static/js/2.cbdcbae7.chunk.js",
+    "static/css/main.323635b9.chunk.css",
+    "static/js/main.3b13c2d1.chunk.js"
+  ]
+}
